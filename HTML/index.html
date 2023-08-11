@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+
+
+  <nav class="nav">
+    <div class="wrapper container">
+      <div class="logo"><a href="">
+          <img src="../images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn"><i class="fa fa-times"></i></label>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li>
+          <a href="" class="desktop-item">Shop <span><i class="fa fa-chevron-down"></i></span></a>
+          <input type="checkbox" id="showMega" />
+          <label for="showMega" class="mobile-item">Shop <span><i class="fa fa-chevron-down"></i></span></label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../images/nav.png" alt="" />
+              </div>
+              <div class="row">
+                <header>Shop Layout</header>
+                <ul class="mega-links">
+                  <li><a href="#">Shop With Achungha</a></li>
+                  <li><a href="#">Shop Mini Categories</a></li>
+                  <li><a href="#">Shop Only Categories</a></li>
+                  <li><a href="#">Shop Icon Categories</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Filter Layout</header>
+                <ul class="mega-links">
+                  <li><a href="#">Sidebar</a></li>
+                  <li><a href="#">Filter Default</a></li>
+                  <li><a href="#">Filter Drawer</a></li>
+                  <li><a href="#">Filter Dropdown</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Product Layout</header>
+                <ul class="mega-links">
+                  <li><a href="#">Layout Zoom</a></li>
+                  <li><a href="#">Layout Sticky</a></li>
+                  <li><a href="#">Layout Sticky 2</a></li>
+                  <li><a href="#">Layout Scroll</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="">Blog</a></li>
+        <li>
+          <a href="" class="desktop-item">Vendors <span><i class="fa fa-chevron-down"></i></span></a>
+          <input type="checkbox" id="showdrop1" />
+          <label for="showdrop1" class="mobile-item">Vendors <span><i class="fa fa-chevron-down"></i></span></label>
+          <ul class="drop-menu1">
+            <li><a href="">Vendor Store listings</a></li>
+            <li><a href="">Store Details</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="" class="desktop-item">Page <span><i class="fas fa-chevron-down"></i></span></a>
+          <input type="checkbox" id="showdrop2" />
+          <label for="showdrop2" class="mobile-item">Page <span><i class="fas fa-chevron-down"></i></span></label>
+          <ul class="drop-menu2">
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="">Page 404</a></li>
+          </ul>
+        </li>
+
+        <li class="icons">
+          <a href="cart.html">
+            <span>
+              <img src="../images/shoppingBag.svg" alt="" />
+              <small class="count d-flex">0</small>
+            </span>
+          </a>
+          <span><img src="../images/search.svg" alt="" /></span>
+        </li>
+      </ul>
+      <label for="" class="btn open-btn"><i class="fa fa-bars"></i></label>
+    </div>
+  </nav>
+
+  <!-- Hero  -->
+  <div class="hero">
+    <div class="row">
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/hero-1.png" alt="">
+            <div class="content">
+              <h1>Super Market Vegbox
+                <br>
+                start from
+                <span>$9</span>
+              </h1>
+              <p>Shop with Achungha! here we sell good and afordable fruit and groceries</p>
+              <a href="">Show Now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="../images/hero-2.png" alt="">
+            <div class="content">
+              <h1>Your First Order
+                <br>
+
+                <span>20% off</span>
+                at Juice
+              </h1>
+              <p>Shop with Achungha! here we sell good and afordable fruit and groceries</p>
+              <a href="">Show Now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="../images/hero-3.png" alt="">
+            <div class="content">
+              <h1>Super Market Vegbox
+                <br>
+                start from
+                <span>$9</span>
+              </h1>
+              <p>Shop with Achungha! here we sell good and afordable fruit and groceries</p>
+              <a href="">Show Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Carousel navigation -->
+    <div class="arrows d-flex">
+      <div class="swiper-prev d-flex">
+        <i class="fa fa-chevron-left swiper-icon"></i>
+       
+      </div>
+      <div class="swiper-next d-flex">
+        <i class="fa fa-chevron-right swiper-icon"></i>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <section class="section collection">
+    <div class="title">
+      <h2>Achungha Show Collection</h2>
+      <span> Fresh groceries and very affordable.</span>
+    </div>
+    <div class="collection-layout container">
+      <div class="collection-item">
+        <img src="../images/promo1.jpg" alt="">
+        <div class="colletion-content">
+          <h2>Juice</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="../images/promo2.jpg" alt="">
+        <div class="colletion-content">
+          <h2>MANGO</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="../images/promo3.jpg" alt="">
+        <div class="colletion-content">
+          <h2>GRAPES</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="../images/promo4.jpg" alt="">
+        <div class="colletion-content">
+          <h2>POTATOE</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="../images/promo5.jpg" alt="">
+        <div class="colletion-content">
+          <h2>ORANGE</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="../images/promo6.jpg" alt="">
+        <div class="colletion-content">
+          <h2>PINEAPPLE</h2>
+          <a href=""> SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature -->
+  <section class="section featured">
+    <div class="title">
+      <h2>Achungha Feature Products</h2>
+      <span> Fresh groceries and very affordable.</span>
+    </div>
+    <div class="row container">
+      <div class="swiper-container slider-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-1.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-2.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-3.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-4.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-5.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product">
+              <div class="img-container">
+                <img src="../images/product-6.jpg" alt="">
+                <div class="addCart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                  <span><i class="fa fa-search"></i></span>
+                  <span><i class="fa fa-heart"></i></span>
+                  <span><i class="fa fa-sliders-h"></i></span>
+                </ul>
+              </div>
+              <div class="bottom">
+                <a href="./productDetails.html">Achungha mini fruit</a>
+                <div class="price">
+                  <span>$150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- featured -->
+    <div class="arrows d-flex">
+      <div class="swiper-prev d-flex">
+        <i class="fa fa-chevron-left"></i></i>
+      </div>
+      <div class="swiper-next d-flex swiper-icon">
+        <i class="fa fa-chevron-right swiper-icon"></i></i>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="../JS/slider.js"></script>
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>
