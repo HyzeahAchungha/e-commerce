@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "e-commerce",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
