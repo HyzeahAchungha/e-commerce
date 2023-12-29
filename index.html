@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../CSS/styles.css" />
+  <link rel="stylesheet" href="./index.css" />
   <title>Achungha Ecommerce Website</title>
 </head>
 
@@ -26,7 +26,7 @@
         <div class="top">
           <label for="" class="btn close-btn"><i class="fa fa-times"></i></label>
         </div>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./product.html">Products</a></li>
         <li>
           <a href="" class="desktop-item">Shop <span><i class="fa fa-chevron-down"></i></span></a>
@@ -738,8 +738,86 @@
  
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="../JS/slider.js"></script>
-  <script src="../JS/index.js"></script>
+  
+  <script>
+    const openNav = document.querySelector(".open-btn");
+const closeNav = document.querySelector(".close-btn");
+const menu = document.querySelector(".nav-list");
+
+openNav.addEventListener("click", () => {
+  menu.classList.add("show");
+});
+
+closeNav.addEventListener("click", () => {
+  menu.classList.remove("show");
+});
+
+// fixed nav
+const navBar= document.querySelector(".nav")
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener('scroll',()=>{
+  const scrollHeight=window.pageYOffset;
+  if (scrollHeight>navHeight) {
+    navBar.classList.add('fix-nav')
+  }else{
+    navBar.classList.remove('fix-nav')
+  }
+})
+  //swipper.js
+  const swiper1 = new Swiper(".slider-1",{
+    autoplay:{
+     delay:3500,
+     disableOnInteraction:false
+    } ,
+    grapbCursor:true,
+    effect:"fade",
+    loop:true,
+    navigation:{
+     nextEl:'.swiper-next',
+     prevEl:'.swiper-prev'
+    }
+ })
+   
+    const swiper2 = new Swiper(".slider-2", {
+     // loop: true,
+     grabCursor: true,
+      spaceBetween: 30,
+     navigation: {
+       nextEl: ".custom-next",
+       prevEl: ".custom-prev",
+     },  
+       breakpoints: {
+        640: {
+         slidesPerView: 2,
+        },
+       768: {
+          slidesPerView: 3,
+       },
+       1024: {
+         slidesPerView: 4,
+       },
+     },
+   });
+   
+   const swiper3 = new Swiper(".slider-3", {
+     loop: true,
+     grabCursor: true,
+     autoplay: {
+       delay: 3500,
+       disableOnInteraction: false,
+     },
+     spaceBetween: 30,
+     slidesPerView: 2,
+     breakpoints: {
+       768: {
+         slidesPerView: 3,
+       },
+       1024: {
+         slidesPerView: 5,
+       },
+     },
+   });
+   </script>
 </body>
 
 </html>

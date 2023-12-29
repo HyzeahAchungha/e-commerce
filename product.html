@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Achungha Ecommerce Website</title>
 </head>
 <body>
@@ -23,8 +23,8 @@
             <div class="top">
               <label for="" class="btn close-btn"><i class="fa fa-times"></i></label>
             </div>
-            <li><a href="../HTML/index.html">Home</a></li>
-            <li><a href="../HTML/product.html">Products</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
             <li>
               <a href="" class="desktop-item">Shop <span><i class="fa fa-chevron-down"></i></span></a>
               <input type="checkbox" id="showMega" />
@@ -88,7 +88,7 @@
             </li>
             <!-- icons -->
             <li class="icons">
-              <a href="../HTML/cart.html">
+              <a href="./cart.html">
                 <span>
                 <img src="../images/shoppingBag.svg" alt="" />
                 <small class="count d-flex">0</small>
@@ -255,7 +255,7 @@
               </ul>
             </div>
             <div class="bottom">
-              <a href="../HTML/productDetails.html">Achungha Mini Backpack</a>
+              <a href="./productDetails.html">Achungha Mini Backpack</a>
               <div class="price">
                 <span>$150</span>
               </div>
@@ -615,7 +615,29 @@
   <!-- End Footer -->
 
   <!-- Custom Scripts -->
-  <script src="../JS/index.js"></script>
+  <script >const openNav = document.querySelector(".open-btn");
+    const closeNav = document.querySelector(".close-btn");
+    const menu = document.querySelector(".nav-list");
+    
+    openNav.addEventListener("click", () => {
+      menu.classList.add("show");
+    });
+    
+    closeNav.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+    
+    // fixed nav
+    const navBar= document.querySelector(".nav")
+    const navHeight = navBar.getBoundingClientRect().height;
+    window.addEventListener('scroll',()=>{
+      const scrollHeight=window.pageYOffset;
+      if (scrollHeight>navHeight) {
+        navBar.classList.add('fix-nav')
+      }else{
+        navBar.classList.remove('fix-nav')
+      }
+    })</script>
 
 
 </body>
